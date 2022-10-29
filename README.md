@@ -19,3 +19,5 @@ SpringBook5 for recap about Spring :) ⚗🧪🍃🌺
 
   4. Transitive Dependency(의존 전이)
      - 의존한 아티팩트가 또 다시 의존하고 있는 다른 아티팩트가 있다면 그 아티팩트도 함께 다운로드한다. 메이븐은 의존하는 대상뿐만 아니라 의존 대상이 다시 의존하는 대상도 함께 다운로드한다. 이렇게 의존 대상이 다시 의존하는 대상까지도 의존 대상에 포함하기 때문에 이를 의존 전이(Transitive Dependency)라고 한다.
+     ![2022-10-29(maven_transitive_dependency)](https://user-images.githubusercontent.com/96904103/198826847-c2e86e92-f4d0-4051-b339-63ead228add5.png)
+
