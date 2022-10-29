@@ -1,5 +1,7 @@
 # Spring-5
-SpringBook5 for recap about Spring :) ⚗🧪🍃🌺
+SpringBook5 for recap about Spring :) ⚗🧪🍃🌺  
+References author 최범균  
+Images exist in Issues  
 
 ### 📝 Terms
   - Spring Data
