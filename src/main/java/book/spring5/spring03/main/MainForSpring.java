@@ -36,11 +36,18 @@ public class MainForSpring {
             } else if (command.startsWith("info ")) {
                 processInfoCommand(command.split(" "));
                 continue;
+            } else if (command.equals("version")) {
+                processVersionCommand();
+                continue;
             }
             printHelp();
         }
     }
 
+    private static void processVersionCommand() {
+        VersionPrinter versionPrinter = ctx.getBean("versionPrinter", VersionPrinter.class);
+        versionPrinter.print();
+    }
 
     private static void processNewCommand(String[] arg) {
         if (arg.length != 5) {
