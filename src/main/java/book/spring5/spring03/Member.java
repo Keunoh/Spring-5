@@ -1,6 +1,6 @@
 package book.spring5.spring03;
 
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 
 public class Member {
 
@@ -8,9 +8,9 @@ public class Member {
     private String email;
     private String password;
     private String name;
-    private LocalTime registerDateTime;
+    private LocalDateTime registerDateTime;
 
-    public Member(String email, String password, String name, LocalTime registerDateTime) {
+    public Member(String email, String password, String name, LocalDateTime registerDateTime) {
         this.email = email;
         this.password = password;
         this.name = name;
@@ -43,7 +43,7 @@ public class Member {
         return name;
     }
 
-    public LocalTime getRegisterDateTime() {
+    public LocalDateTime getRegisterDateTime() {
         return registerDateTime;
     }
 }
