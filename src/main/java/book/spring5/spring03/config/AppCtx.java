@@ -1,8 +1,6 @@
 package book.spring5.spring03.config;
 
-import book.spring5.spring03.ChangePasswordService;
-import book.spring5.spring03.MemberDao;
-import book.spring5.spring03.MemberRegisterService;
+import book.spring5.spring03.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -24,5 +22,15 @@ public class AppCtx {
         ChangePasswordService pwdSvc = new ChangePasswordService();
         pwdSvc.setMemberDao(memberDao());
         return pwdSvc;
+    }
+
+    @Bean
+    public MemberPrinter memberPrinter() {
+        return new MemberPrinter();
+    }
+
+    @Bean
+    public MemberListPrinter listPrinter() {
+        return new MemberListPrinter(memberDao(), memberPrinter());
     }
 }
