@@ -20,7 +20,6 @@ public class AppCtx {
     @Bean
     public ChangePasswordService changePwdSvc() {
         ChangePasswordService pwdSvc = new ChangePasswordService();
-        pwdSvc.setMemberDao(memberDao());
         return pwdSvc;
     }
 
