@@ -14,7 +14,7 @@ public class AppCtx {
 
     @Bean
     public MemberRegisterService memberRegSvc() {
-        return new MemberRegisterService(memberDao());
+        return new MemberRegisterService();
     }
 
     @Bean
