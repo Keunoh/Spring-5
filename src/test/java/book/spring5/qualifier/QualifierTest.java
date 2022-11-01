@@ -25,16 +25,22 @@ public class QualifierTest {
 
     }
 
+    @Configuration
     static class QualifierApp {
 
         @Bean
-        public Printer printer() {
+        public LaserPrinter laserPrinter1() {
+            return new LaserPrinter();
+        }
+
+        @Bean
+        public LaserPrinter laserPrinter2() {
             return new LaserPrinter();
         }
 
         @Bean
         public BoxImpl boxImpl() {
-            return new BoxImpl(printer());
+            return new BoxImpl(new LaserPrinter());
         }
 
     }

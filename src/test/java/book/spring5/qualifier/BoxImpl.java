@@ -1,5 +1,8 @@
 package book.spring5.qualifier;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class BoxImpl implements Box {
 
     private final Printer printer;
