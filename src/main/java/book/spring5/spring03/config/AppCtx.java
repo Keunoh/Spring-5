@@ -23,7 +23,7 @@ public class AppCtx {
     }
 
     @Bean
-    public MemberPrinter memberPrinter() {
+    public MemberPrinter memberPrinter1() {
         return new MemberPrinter();
     }
 
